@@ -2,19 +2,39 @@
 console.log('Hola Dios es Amor Infinito');
 console.log('Ama a Dios Sobre toda las cosas');
 console.log('Dios Tiene El Control De Todo');
-let numberOfLines=0;
-function printLineNumber(){
-    numberOfLines++;
-    numberOfLines++;
-    numberOfLines++;
-    console.log('Linea # ', numberOfLines );
+
+
+
+function saludar(name='Alfredo'){
+    console.log('Dios es Amor ' + name );
+}
+
+saludar();
+
+// Objetos
+let carro ={
+    color:'Blanco',
+    traccion:'4 x 4',
+    llantas: 4,
+    puertas: 5,
+    marca:'Chevrolet'
 
 }
-printLineNumber();
-printLineNumber();
-printLineNumber();
-printLineNumber();
-printLineNumber();
-printLineNumber();
-printLineNumber();
-printLineNumber();
+
+console.log(carro.marca);
+
+let person ={
+    nombre:'Melissa',
+    edad: 30,
+    esActiva: true,
+    pasatiempos:['Voleibol', 'Basketbol','Fútbol'], 
+    toString(){
+        let imprimir =this.nombre + ' edad  ' + this.edad + ' años ' + 'Su Pasatiempo son jugar: ' +this.pasatiempos;
+        console.log(imprimir);
+    }
+
+
+}
+console.log(person.nombre.toUpperCase());
+
+person.toString();
